@@ -1,0 +1,20 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Habilitar el módulo crypto global
+ENV NODE_OPTIONS="--experimental-global-webcrypto"
+
+COPY package*.json ./
+
+# Instala todas las dependencias para poder compilar
+RUN npm install
+
+COPY . .
+
+# Ejecuta el build y verifica que la carpeta dist se genere
+RUN npm run build && ls -la && ls -la dist/ && ls -la dist/src/
+
+EXPOSE 3001
+
+CMD ["npm", "run", "start:prod"]
