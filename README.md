@@ -328,14 +328,3 @@ AZURE_APP_SERVICE_NAME=your-app-service-name
    - El proyecto incluye configuraciones por defecto
    - No necesitas crear archivos `.env` manualmente para desarrollo
 
-## Contribución
-
-1. Fork el proyecto
-2. Crear rama feature (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir Pull Request
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
